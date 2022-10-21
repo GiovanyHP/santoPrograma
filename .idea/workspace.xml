@@ -4,7 +4,19 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" line="86" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7353b21-5d05-45d0-85e6-63eb8d4d0289" name="Default" comment="" />
+    <list default="true" id="c7353b21-5d05-45d0-85e6-63eb8d4d0289" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/controller/OracaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/controller/OracaoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPostDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPostDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPutDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPutDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPostDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPostDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPutDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPutDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/entity/Oracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/entity/Oracao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/entity/Usuario.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OracaoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="96">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -40,6 +61,9 @@
     <findStrings>
       <find>test</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -72,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/repository/OracaoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPutPostDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoDTO.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPostDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/enums/NivelUsuario.java" />
@@ -92,6 +115,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java" />
         <option value="$PROJECT_DIR$/system.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -111,12 +135,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -424,7 +449,7 @@
       <workItem from="1666361026030" duration="17000" />
       <workItem from="1666361819047" duration="17000" />
       <workItem from="1666365781287" duration="638000" />
-      <workItem from="1666378797878" duration="1070000" />
+      <workItem from="1666378797878" duration="2302000" />
     </task>
     <servers />
   </component>
@@ -461,7 +486,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78609000" />
+    <option name="totallyTimeSpent" value="79841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -479,12 +504,13 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32849163" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Run Dashboard" order="13" visible="true" weight="0.3642458" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32849163" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -496,7 +522,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32849163" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -543,11 +568,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="teste" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java</url>
           <line>34</line>
           <properties />
           <option name="timeStamp" value="33" />
@@ -739,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioLoginDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -764,13 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPostDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -914,10 +929,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPostDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="96">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>
