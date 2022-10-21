@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar app.java
+web: java $JAVA_OPTS -jar app.jar
