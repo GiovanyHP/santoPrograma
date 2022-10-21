@@ -17,6 +17,7 @@ import java.util.Calendar;
 
 @SpringBootTest
 @AutoConfigureMockMvc
+@ActiveProfiles("test")
 public class UsuarioControllerTest {
 
     static final String URL = "/usuarios";
