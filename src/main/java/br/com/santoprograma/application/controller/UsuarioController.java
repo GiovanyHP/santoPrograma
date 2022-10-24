@@ -64,9 +64,10 @@ public class UsuarioController {
     @PostMapping(value = "/login")
     public ResponseEntity<UsuarioDTO> login(@Valid @RequestBody UsuarioLoginDTO usuarioLoginDTO){
         Usuario usuario = usuarioService.usuarioLogin(usuarioLoginDTO);
+        UsuarioDTO usuarioDTO = UsuarioConverter.mapEntityForDTO(usuario);
 
         if (usuario != null) {
-            return ResponseEntity.ok().build();
+            return ResponseEntity.ok().body(usuarioDTO);
         }
         return ResponseEntity.badRequest().build();
     }
