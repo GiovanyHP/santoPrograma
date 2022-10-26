@@ -1,9 +1,9 @@
 package br.com.santoprograma.application.service;
 
 import br.com.santoprograma.application.converter.OracaoConverter;
-import br.com.santoprograma.application.dtos.OracaoDTO;
-import br.com.santoprograma.application.dtos.OracaoPostDTO;
-import br.com.santoprograma.application.dtos.OracaoPutDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoPostDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoPutDTO;
 import br.com.santoprograma.application.entity.Oracao;
 import br.com.santoprograma.application.repository.OracaoRepository;
 import br.com.santoprograma.application.service.exceptions.InternalServerErrorException;

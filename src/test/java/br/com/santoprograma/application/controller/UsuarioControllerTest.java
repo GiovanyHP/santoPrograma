@@ -1,6 +1,6 @@
 package br.com.santoprograma.application.controller;
 
-import br.com.santoprograma.application.dtos.UsuarioPostDTO;
+import br.com.santoprograma.application.dtos.Usuario.UsuarioPostDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

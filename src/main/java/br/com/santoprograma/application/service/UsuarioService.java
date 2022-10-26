@@ -1,10 +1,7 @@
 package br.com.santoprograma.application.service;
 
 import br.com.santoprograma.application.converter.UsuarioConverter;
-import br.com.santoprograma.application.dtos.UsuarioDTO;
-import br.com.santoprograma.application.dtos.UsuarioLoginDTO;
-import br.com.santoprograma.application.dtos.UsuarioPostDTO;
-import br.com.santoprograma.application.dtos.UsuarioPutDTO;
+import br.com.santoprograma.application.dtos.Usuario.*;
 import br.com.santoprograma.application.entity.Usuario;
 import br.com.santoprograma.application.repository.UsuarioRepository;
 import br.com.santoprograma.application.service.exceptions.DataIntegratyViolationException;
@@ -21,6 +18,9 @@ public class UsuarioService {
 
     @Autowired
     private UsuarioRepository usuarioRepository;
+
+    @Autowired
+    private UsuarioConverter usuarioConverter;
 
     public Usuario findById(Long id) {
 
@@ -46,9 +46,9 @@ public class UsuarioService {
             throw new DataIntegratyViolationException("Email Já Cadastrado na base de dados");
         }
 
-        Usuario usuario = UsuarioConverter.mapDTOForInsert(usuarioPostDTO);
+        Usuario usuario = usuarioConverter.mapDTOForInsert(usuarioPostDTO);
         usuarioRepository.save(usuario);
-        return UsuarioConverter.mapEntityForDTO(usuario);
+        return usuarioConverter.mapEntityForDTO(usuario);
     }
 
     public UsuarioDTO update(Long id, UsuarioPutDTO usuarioPutDTO) {
@@ -66,15 +66,20 @@ public class UsuarioService {
             throw new DataIntegratyViolationException("Email Já Cadastrado na base de dados");
         }
 
-        UsuarioConverter.mapDTOForUpdate(usuarioOld, usuarioPutDTO);
+        usuarioConverter.mapDTOForUpdate(usuarioOld, usuarioPutDTO);
         usuarioRepository.save(usuarioOld);
-        return UsuarioConverter.mapEntityForDTO(usuarioOld);
+        return usuarioConverter.mapEntityForDTO(usuarioOld);
     }
 
     public void delete(Long id) {
         findById(id);
         usuarioRepository.deleteById(id);
 
+    }
+
+    public UsuarioGetAllDTO oracoesUsuario(Usuario usuario) {
+        UsuarioGetAllDTO usuarioGetAllDTO = usuarioConverter.mapEntityForList(usuario);
+        return usuarioGetAllDTO;
     }
 
     public Usuario usuarioLogin(UsuarioLoginDTO usuarioLoginDTO) {

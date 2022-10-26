@@ -1,4 +1,4 @@
-package br.com.santoprograma.application.dtos;
+package br.com.santoprograma.application.dtos.Usuario;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;

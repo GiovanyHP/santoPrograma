@@ -1,4 +1,4 @@
-package br.com.santoprograma.application.dtos;
+package br.com.santoprograma.application.dtos.Oracao;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModelProperty;
@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Data
@@ -15,16 +14,15 @@ import javax.validation.constraints.Size;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-public class OracaoPostDTO {
+public class OracaoPutDTO {
 
-    @ApiModelProperty(value = "Usuario do pedido de Oração",required = true)
+    @ApiModelProperty(value = "Usuario do pedido de Oração")
     private Long usuario;
 
-    @ApiModelProperty(value = "Pedido de Oração", required = true, example = "Faço esse pedido a efeito de teste")
-    @NotBlank
+    @ApiModelProperty(value = "Pedido de Oração", example = "Faço esse pedido a efeito de teste")
     @Size(max = 5000)
     private String pedido;
 
-    @ApiModelProperty(value = "Situação da Oração", required = true, example = "LIDO", allowableValues = "range[1, 15]")
+    @ApiModelProperty(value = "Situação da Oração", example = "LIDO", allowableValues = "range[1, 15]")
     private Integer situacaoOracao;
 }

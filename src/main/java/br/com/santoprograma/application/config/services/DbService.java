@@ -68,9 +68,15 @@ public class DbService {
         usuario2.setSenha(encoder2);
 
         Oracao oracao = new Oracao(null, usuario, "pedido de oração Teste", LocalDateTime.now(), 1);
+        Oracao oracao2 = new Oracao(null, usuario, "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC", LocalDateTime.now(), 1);
+        Oracao oracao3 = new Oracao(null, usuario2, "making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of", LocalDateTime.now(), 1);
+        Oracao oracao4 = new Oracao(null, usuario2, "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32", LocalDateTime.now(), 1);
 
         usuarioRepository.save(usuario);
         usuarioRepository.save(usuario2);
         oracaoRepository.save(oracao);
+        oracaoRepository.save(oracao2);
+        oracaoRepository.save(oracao3);
+        oracaoRepository.save(oracao4);
     }
 }

@@ -1,10 +1,7 @@
 package br.com.santoprograma.application.controller;
 
 import br.com.santoprograma.application.converter.UsuarioConverter;
-import br.com.santoprograma.application.dtos.UsuarioDTO;
-import br.com.santoprograma.application.dtos.UsuarioLoginDTO;
-import br.com.santoprograma.application.dtos.UsuarioPostDTO;
-import br.com.santoprograma.application.dtos.UsuarioPutDTO;
+import br.com.santoprograma.application.dtos.Usuario.*;
 import br.com.santoprograma.application.entity.Usuario;
 import br.com.santoprograma.application.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,18 +22,21 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
+    @Autowired
+    private UsuarioConverter usuarioConverter;
+
     @GetMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<UsuarioDTO> findById(@PathVariable Long id) {
         Usuario obj = usuarioService.findById(id);
-        return ResponseEntity.ok().body(UsuarioConverter.mapEntityForDTO(obj));
+        return ResponseEntity.ok().body(usuarioConverter.mapEntityForDTO(obj));
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<UsuarioDTO>> findAll() {
         List<Usuario> usuarios = usuarioService.findAll();
-        return ResponseEntity.ok().body(UsuarioConverter.mapEntityForDTOGetAll(usuarios));
+        return ResponseEntity.ok().body(usuarioConverter.mapEntityForDTOGetAll(usuarios));
     }
 
     @PostMapping
@@ -64,11 +64,19 @@ public class UsuarioController {
     @PostMapping(value = "/login")
     public ResponseEntity<UsuarioDTO> login(@Valid @RequestBody UsuarioLoginDTO usuarioLoginDTO) {
         Usuario usuario = usuarioService.usuarioLogin(usuarioLoginDTO);
-        UsuarioDTO usuarioDTO = UsuarioConverter.mapEntityForDTO(usuario);
+        UsuarioDTO usuarioDTO = usuarioConverter.mapEntityForDTO(usuario);
 
         if (usuario != null) {
             return ResponseEntity.ok().body(usuarioDTO);
         }
         return ResponseEntity.badRequest().build();
+    }
+
+    @GetMapping(value = "/{id}/oracoes")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<UsuarioGetAllDTO> oracoesUsuario(@PathVariable Long id) {
+        Usuario usuario = usuarioService.findById(id);
+
+        return ResponseEntity.ok().body(usuarioService.oracoesUsuario(usuario));
     }
 }

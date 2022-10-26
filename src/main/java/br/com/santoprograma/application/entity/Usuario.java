@@ -1,10 +1,8 @@
 package br.com.santoprograma.application.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.annotations.Fetch;
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -83,7 +81,8 @@ public class Usuario implements Serializable {
     @Column(name = "nivel")
     private Integer nivelUsuario;
 
-    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
+    @ToString.Exclude
     private List<Oracao> pedidosOracao = new ArrayList<>();
 }

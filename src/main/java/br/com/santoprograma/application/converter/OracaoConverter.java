@@ -1,8 +1,9 @@
 package br.com.santoprograma.application.converter;
 
-import br.com.santoprograma.application.dtos.OracaoDTO;
-import br.com.santoprograma.application.dtos.OracaoPostDTO;
-import br.com.santoprograma.application.dtos.OracaoPutDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoGetAllDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoPostDTO;
+import br.com.santoprograma.application.dtos.Oracao.OracaoPutDTO;
 import br.com.santoprograma.application.entity.Oracao;
 import br.com.santoprograma.application.enums.SituacaoOracao;
 import br.com.santoprograma.application.frameworksp.ConverterBase;
@@ -20,11 +21,14 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
     @Autowired
     private UsuarioService usuarioService;
 
+    @Autowired
+    private UsuarioConverter usuarioConverter;
+
     @Override
     public OracaoDTO mapEntityForDTO(Oracao ent) {
         OracaoDTO oracaoDTO = new OracaoDTO();
         oracaoDTO.setId(ent.getId());
-        oracaoDTO.setUsuario(UsuarioConverter.mapEntityForDTO(ent.getUsuario()));
+        oracaoDTO.setUsuario(usuarioConverter.mapEntityForDTO(ent.getUsuario()));
         oracaoDTO.setDataPedido(ent.getDataPedido());
         oracaoDTO.setPedido(ent.getPedido());
         oracaoDTO.setSituacaoOracao(SituacaoOracao.toEnum(ent.getSituacaoOracao()).getDescricao());
@@ -63,5 +67,15 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
         ent.setSituacaoOracao(oracaoPutDTO.getSituacaoOracao() != null ? SituacaoOracao.toEnum(oracaoPutDTO.getSituacaoOracao()).getCodigo() : ent.getSituacaoOracao());
 
         return ent;
+    }
+
+    public OracaoGetAllDTO oracoesGetAll(Oracao oracao){
+        OracaoGetAllDTO oracaoGetAllDTO = new OracaoGetAllDTO();
+        oracaoGetAllDTO.setId(oracao.getId());
+        oracaoGetAllDTO.setDataPedido(oracao.getDataPedido());
+        oracaoGetAllDTO.setPedido(oracao.getPedido());
+        oracaoGetAllDTO.setSituacaoOracao(SituacaoOracao.toEnum(oracao.getSituacaoOracao()).getDescricao());
+
+        return oracaoGetAllDTO;
     }
 }

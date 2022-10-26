@@ -1,11 +1,15 @@
 package br.com.santoprograma.application.converter;
 
-import br.com.santoprograma.application.dtos.UsuarioDTO;
-import br.com.santoprograma.application.dtos.UsuarioPostDTO;
-import br.com.santoprograma.application.dtos.UsuarioPutDTO;
+import br.com.santoprograma.application.dtos.Usuario.UsuarioDTO;
+import br.com.santoprograma.application.dtos.Usuario.UsuarioGetAllDTO;
+import br.com.santoprograma.application.dtos.Usuario.UsuarioPostDTO;
+import br.com.santoprograma.application.dtos.Usuario.UsuarioPutDTO;
+import br.com.santoprograma.application.entity.Oracao;
 import br.com.santoprograma.application.entity.Usuario;
 import br.com.santoprograma.application.enums.NivelUsuario;
 import br.com.santoprograma.application.enums.SituacaoUsuario;
+import br.com.santoprograma.application.frameworksp.ConverterBase;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
@@ -15,54 +19,60 @@ import java.util.Calendar;
 import java.util.List;
 
 @Component
-public class UsuarioConverter {
+public class UsuarioConverter implements ConverterBase<Usuario, UsuarioDTO, UsuarioPostDTO, UsuarioPutDTO>{
 
-    public static UsuarioDTO mapEntityForDTO(Usuario usuario) {
+    @Autowired
+    private OracaoConverter oracaoConverter;
+
+    @Override
+    public UsuarioDTO mapEntityForDTO(Usuario ent) {
         UsuarioDTO usuarioDTO = new UsuarioDTO();
 
-        usuarioDTO.setIdUsuario(usuario.getIdUsuario());
-        usuarioDTO.setNome(usuario.getNome());
-        usuarioDTO.setDtNascimento(usuario.getDtNascimento());
-        usuarioDTO.setDtCadastro(usuario.getDtCadastro());
-        usuarioDTO.setTipoLogradouro(usuario.getTipoLogradouro());
-        usuarioDTO.setLogradouro(usuario.getLogradouro());
-        usuarioDTO.setNumero(usuario.getNumero());
-        usuarioDTO.setComplemento(usuario.getComplemento());
-        usuarioDTO.setBairro(usuario.getBairro());
-        usuarioDTO.setCidade(usuario.getCidade());
-        usuarioDTO.setCep(usuario.getCep());
-        usuarioDTO.setUf(usuario.getUf());
-        usuarioDTO.setTelefone(usuario.getTelefone());
-        usuarioDTO.setEmail(usuario.getEmail());
-        usuarioDTO.setCpf(usuario.getCpf());
+        usuarioDTO.setIdUsuario(ent.getIdUsuario());
+        usuarioDTO.setNome(ent.getNome());
+        usuarioDTO.setDtNascimento(ent.getDtNascimento());
+        usuarioDTO.setDtCadastro(ent.getDtCadastro());
+        usuarioDTO.setTipoLogradouro(ent.getTipoLogradouro());
+        usuarioDTO.setLogradouro(ent.getLogradouro());
+        usuarioDTO.setNumero(ent.getNumero());
+        usuarioDTO.setComplemento(ent.getComplemento());
+        usuarioDTO.setBairro(ent.getBairro());
+        usuarioDTO.setCidade(ent.getCidade());
+        usuarioDTO.setCep(ent.getCep());
+        usuarioDTO.setUf(ent.getUf());
+        usuarioDTO.setTelefone(ent.getTelefone());
+        usuarioDTO.setEmail(ent.getEmail());
+        usuarioDTO.setCpf(ent.getCpf());
 
-        if (usuario.getSituacaoUsuario() == null) {
+        if (ent.getSituacaoUsuario() == null) {
             usuarioDTO.setSituacaoUsuario(SituacaoUsuario.ATIVO.getDescricao() + " *SETADO POIS ESTAVA VAZIO*");
         } else {
 
-            usuarioDTO.setSituacaoUsuario(SituacaoUsuario.toEnum(usuario.getSituacaoUsuario()).getDescricao());
+            usuarioDTO.setSituacaoUsuario(SituacaoUsuario.toEnum(ent.getSituacaoUsuario()).getDescricao());
         }
 
-        if (usuario.getNivelUsuario() == null) {
+        if (ent.getNivelUsuario() == null) {
             usuarioDTO.setNivelUsuario(NivelUsuario.PADRAO.getDescricao() + " *SETADO POIS ESTAVA VAZIO*");
         } else {
 
-            usuarioDTO.setNivelUsuario(NivelUsuario.toEnum(usuario.getNivelUsuario()).getDescricao());
+            usuarioDTO.setNivelUsuario(NivelUsuario.toEnum(ent.getNivelUsuario()).getDescricao());
         }
 
         return usuarioDTO;
     }
 
-    public static List<UsuarioDTO> mapEntityForDTOGetAll(List<Usuario> listUsuarios) {
+    @Override
+    public List<UsuarioDTO> mapEntityForDTOGetAll(List<Usuario> list) {
         List<UsuarioDTO> listaUsuariosDTO = new ArrayList<>();
 
-        for (Usuario usuario : listUsuarios) {
+        for (Usuario usuario : list) {
             listaUsuariosDTO.add(mapEntityForDTO(usuario));
         }
         return listaUsuariosDTO;
     }
 
-    public static Usuario mapDTOForInsert(UsuarioPostDTO usuarioPostDTO) {
+    @Override
+    public Usuario mapDTOForInsert(UsuarioPostDTO usuarioPostDTO) {
         Usuario usuario = new Usuario();
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
@@ -89,35 +99,49 @@ public class UsuarioConverter {
         return usuario;
     }
 
-    public static Usuario mapDTOForUpdate(Usuario usuarioOld, UsuarioPutDTO usuarioPutDTO) {
+    @Override
+    public Usuario mapDTOForUpdate(Usuario ent, UsuarioPutDTO usuarioPutDTO) {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-        usuarioOld.setNome(usuarioPutDTO.getNome() != null ? usuarioPutDTO.getNome() : usuarioOld.getNome());
-        usuarioOld.setDtNascimento(usuarioPutDTO.getDtNascimento() != null ? usuarioPutDTO.getDtNascimento() : usuarioOld.getDtNascimento());
-        usuarioOld.setTipoLogradouro(usuarioPutDTO.getTipoLogradouro() != null ? usuarioPutDTO.getTipoLogradouro() : usuarioOld.getTipoLogradouro());
-        usuarioOld.setLogradouro(usuarioPutDTO.getLogradouro() != null ? usuarioPutDTO.getLogradouro() : usuarioOld.getLogradouro());
-        usuarioOld.setNumero(usuarioPutDTO.getNumero() != null ? usuarioPutDTO.getNumero() : usuarioOld.getNumero());
-        usuarioOld.setComplemento(usuarioPutDTO.getComplemento() != null ? usuarioPutDTO.getComplemento() : usuarioOld.getComplemento());
-        usuarioOld.setBairro(usuarioPutDTO.getBairro() != null ? usuarioPutDTO.getBairro() : usuarioOld.getBairro());
-        usuarioOld.setCidade(usuarioPutDTO.getCidade() != null ? usuarioPutDTO.getCidade() : usuarioOld.getCidade());
-        usuarioOld.setCep(usuarioPutDTO.getCep() != null ? usuarioPutDTO.getCep() : usuarioOld.getCep());
-        usuarioOld.setUf(usuarioPutDTO.getUf() != null ? usuarioPutDTO.getUf() : usuarioOld.getUf());
-        usuarioOld.setTelefone(usuarioPutDTO.getTelefone() != null ? usuarioPutDTO.getTelefone() : usuarioOld.getTelefone());
-        usuarioOld.setEmail(usuarioPutDTO.getEmail() != null ? usuarioPutDTO.getEmail() : usuarioOld.getEmail());
-        usuarioOld.setCpf(usuarioPutDTO.getCpf() != null ? usuarioPutDTO.getCpf() : usuarioOld.getCpf());
+        ent.setNome(usuarioPutDTO.getNome() != null ? usuarioPutDTO.getNome() : ent.getNome());
+        ent.setDtNascimento(usuarioPutDTO.getDtNascimento() != null ? usuarioPutDTO.getDtNascimento() : ent.getDtNascimento());
+        ent.setTipoLogradouro(usuarioPutDTO.getTipoLogradouro() != null ? usuarioPutDTO.getTipoLogradouro() : ent.getTipoLogradouro());
+        ent.setLogradouro(usuarioPutDTO.getLogradouro() != null ? usuarioPutDTO.getLogradouro() : ent.getLogradouro());
+        ent.setNumero(usuarioPutDTO.getNumero() != null ? usuarioPutDTO.getNumero() : ent.getNumero());
+        ent.setComplemento(usuarioPutDTO.getComplemento() != null ? usuarioPutDTO.getComplemento() : ent.getComplemento());
+        ent.setBairro(usuarioPutDTO.getBairro() != null ? usuarioPutDTO.getBairro() : ent.getBairro());
+        ent.setCidade(usuarioPutDTO.getCidade() != null ? usuarioPutDTO.getCidade() : ent.getCidade());
+        ent.setCep(usuarioPutDTO.getCep() != null ? usuarioPutDTO.getCep() : ent.getCep());
+        ent.setUf(usuarioPutDTO.getUf() != null ? usuarioPutDTO.getUf() : ent.getUf());
+        ent.setTelefone(usuarioPutDTO.getTelefone() != null ? usuarioPutDTO.getTelefone() : ent.getTelefone());
+        ent.setEmail(usuarioPutDTO.getEmail() != null ? usuarioPutDTO.getEmail() : ent.getEmail());
+        ent.setCpf(usuarioPutDTO.getCpf() != null ? usuarioPutDTO.getCpf() : ent.getCpf());
 
         if (usuarioPutDTO.getSituacaoUsuario() != null) {
-            usuarioOld.setSituacaoUsuario(SituacaoUsuario.toEnum(usuarioPutDTO.getSituacaoUsuario()).getCodigo());
+            ent.setSituacaoUsuario(SituacaoUsuario.toEnum(usuarioPutDTO.getSituacaoUsuario()).getCodigo());
         }
 
         if (usuarioPutDTO.getNivelUsuario() != null) {
-            usuarioOld.setNivelUsuario(NivelUsuario.toEnum(usuarioPutDTO.getNivelUsuario()).getCodigo());
+            ent.setNivelUsuario(NivelUsuario.toEnum(usuarioPutDTO.getNivelUsuario()).getCodigo());
         }
 
         if (usuarioPutDTO.getSenha() != null) {
-            usuarioOld.setSenha(passwordEncoder.encode(usuarioPutDTO.getSenha()));
+            ent.setSenha(passwordEncoder.encode(usuarioPutDTO.getSenha()));
         }
 
-        return usuarioOld;
+        return ent;
+    }
+
+    public UsuarioGetAllDTO mapEntityForList(Usuario usuario) {
+        UsuarioGetAllDTO usuarioGetAllDTO = new UsuarioGetAllDTO();
+
+        usuarioGetAllDTO.setIdUsuario(usuario.getIdUsuario());
+        usuarioGetAllDTO.setNome(usuario.getNome());
+
+        for (Oracao oracao : usuario.getPedidosOracao()) {
+            usuarioGetAllDTO.add(oracaoConverter.oracoesGetAll(oracao));
+        }
+
+        return usuarioGetAllDTO;
     }
 }

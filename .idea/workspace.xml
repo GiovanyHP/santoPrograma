@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" line="86" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" line="84" mnemonic="9" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java" line="66" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7353b21-5d05-45d0-85e6-63eb8d4d0289" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoGetAllDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioGetAllDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPutDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPutDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPutDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPutDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPutDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPutDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoPostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPutDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoPutDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioPostDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPutDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioPutDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/santoprograma/application/controller/UsuarioControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/santoprograma/application/controller/UsuarioControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/converter/OracaoConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/converter/OracaoConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/converter/UsuarioConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/converter/UsuarioConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/OracaoPutDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/dtos/UsuarioPutDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/entity/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/service/OracaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/service/OracaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/santoprograma/application/service/UsuarioService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,47 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OracaoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java">
+      <file leaf-file-name="DbService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="59" column="48" lean-forward="true" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsuarioPutDTO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPutDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OracaoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OracaoConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsuarioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="477">
+              <caret line="79" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -74,8 +61,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/app.java" />
-        <option value="$PROJECT_DIR$/src/test/java/br/com/santoprograma/controller/TesteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/enums/UsuarioEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/entity/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/controller/tetetete.java" />
@@ -114,20 +99,12 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/exceptions/InternalServerErrorException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/repository/UsuarioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/exceptions/ControllerExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/repository/OracaoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPutPostDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPostDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/enums/NivelUsuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/UsuarioService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPostDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/frameworksp/ConverterBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/procfile" />
         <option value="$PROJECT_DIR$/src/main/resources/application-test.properties" />
@@ -136,10 +113,21 @@
         <option value="$PROJECT_DIR$/system.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPutDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPutDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoGetAllDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/repository/OracaoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioGetAllDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoGetAllDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/UsuarioService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java" />
       </list>
     </option>
   </component>
@@ -160,8 +148,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="167" />
-    <option name="y" value="-14" />
+    <option name="x" value="522" />
+    <option name="y" value="280" />
     <option name="width" value="976" />
     <option name="height" value="739" />
   </component>
@@ -211,22 +199,20 @@
               <item name="santoPrograma" type="b2602c69:ProjectViewProjectNode" />
               <item name="santoPrograma" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="santoPrograma" type="b2602c69:ProjectViewProjectNode" />
               <item name="santoPrograma" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="santoPrograma" type="b2602c69:ProjectViewProjectNode" />
-              <item name="santoPrograma" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -482,7 +468,7 @@
       <workItem from="1666446826537" duration="37000" />
       <workItem from="1666639671437" duration="3381000" />
       <workItem from="1666706514742" duration="621000" />
-      <workItem from="1666787732079" duration="602000" />
+      <workItem from="1666787732079" duration="6839000" />
     </task>
     <servers />
   </component>
@@ -519,7 +505,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90135000" />
+    <option name="totallyTimeSpent" value="96372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -542,7 +528,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run Dashboard" order="13" visible="true" weight="0.25586593" />
+      <window_info anchor="bottom" id="Run Dashboard" order="13" visible="true" weight="0.30614525" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32849163" />
       <window_info anchor="bottom" id="Spring" order="7" />
@@ -559,41 +545,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32849163" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32849163" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="13" visible="true" weight="0.3642458" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -610,16 +561,61 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java</url>
-          <line>34</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="54" />
+      <option name="time" value="59" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>usuarioGetAllDTO.add(oracao)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>oracao</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>usuario.getPedidosOracao()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>validarEmailSeJaExisteCadastrado(usuarioPutDTO.getEmail()).getIdUsuario()</expression-string>
         <language-id>JAVA</language-id>
@@ -650,32 +646,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>NivelUsuario.toEnum(usuario.getNivelUsuario()).getDescricao()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>oracao</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>oracao.getPedido()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/santoprograma/controller/TesteController.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3-sources.jar!/javax/persistence/Id.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/Data.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -738,27 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.6.RELEASE/spring-data-jpa-2.2.6.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/repository/OracaoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/enums/NivelUsuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -770,34 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-599">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPostDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/frameworksp/ConverterBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Oracao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -821,13 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -859,27 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/UsuarioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/enums/SituacaoUsuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -894,34 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioLoginDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/enums/SituacaoOracao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPostDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -932,14 +804,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.6.RELEASE/spring-data-jpa-2.2.6.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="128">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/OracaoPutDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/repository/OracaoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Oracao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/entity/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoPutDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -949,31 +849,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoPostDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        <state relative-caret-position="144">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoGetAllDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        <state relative-caret-position="285">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Oracao/OracaoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioPutDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioPostDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioLoginDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioGetAllDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/Usuario/UsuarioDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/OracaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/OracaoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="59" column="48" lean-forward="true" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+        <state relative-caret-position="848">
+          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/dtos/UsuarioPutDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/frameworksp/ConverterBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        <state relative-caret-position="64">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/UsuarioConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="141" column="71" selection-start-line="141" selection-start-column="71" selection-end-line="141" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/controller/UsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/service/UsuarioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1072">
+          <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/converter/OracaoConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/santoprograma/application/config/services/DbService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="79" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
         </state>
       </provider>
     </entry>
