@@ -56,8 +56,9 @@ public class OracaoController implements ControllerBase<OracaoDTO, OracaoDTO, Or
     @Override
     @PutMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<OracaoDTO> update(Long id, @Valid OracaoPutDTO oracaoPutDTO) {
-        return null;
+    public ResponseEntity<OracaoDTO> update(@PathVariable Long id, @RequestBody @Valid OracaoPutDTO oracaoPutDTO) {
+        OracaoDTO oracaoDTO = oracaoService.update(id, oracaoPutDTO);
+        return ResponseEntity.ok().body(oracaoDTO);
     }
 
     @Override

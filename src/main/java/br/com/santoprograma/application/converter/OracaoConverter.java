@@ -58,10 +58,10 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
     @Override
     public Oracao mapDTOForUpdate(Oracao ent, OracaoPutDTO oracaoPutDTO) {
 
-       ent.setUsuario(oracaoPutDTO.getUsuario() != null ? usuarioService.findById(oracaoPutDTO.getUsuario()) : ent.getUsuario());
-       ent.setPedido(oracaoPutDTO.getPedido() != null ? oracaoPutDTO.getPedido() : ent.getPedido());
-       ent.setSituacaoOracao(oracaoPutDTO.getSituacaoOracao() != null ? SituacaoOracao.toEnum(oracaoPutDTO.getSituacaoOracao()).getCodigo() : ent.getSituacaoOracao());
+        ent.setUsuario(oracaoPutDTO.getUsuario() != null ? usuarioService.findById(oracaoPutDTO.getUsuario()) : ent.getUsuario());
+        ent.setPedido(oracaoPutDTO.getPedido() != null ? oracaoPutDTO.getPedido() : ent.getPedido());
+        ent.setSituacaoOracao(oracaoPutDTO.getSituacaoOracao() != null ? SituacaoOracao.toEnum(oracaoPutDTO.getSituacaoOracao()).getCodigo() : ent.getSituacaoOracao());
 
-       return ent;
+        return ent;
     }
 }

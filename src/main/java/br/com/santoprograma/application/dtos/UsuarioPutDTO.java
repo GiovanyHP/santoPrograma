@@ -74,5 +74,4 @@ public class UsuarioPutDTO {
     @ApiModelProperty(value = "Nível do Usuário", example = "1")
     private Integer nivelUsuario;
 
-
 }
