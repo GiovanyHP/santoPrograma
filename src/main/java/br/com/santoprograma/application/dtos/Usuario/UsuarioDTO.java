@@ -27,54 +27,54 @@ public class UsuarioDTO {
     @Size(max = 255)
     private String nome;
 
-    @ApiModelProperty(value = "Data de Nascimento do Usuário")
+    @ApiModelProperty(value = "Data de Nascimento do Usuário", example = "15/05/2000")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private Date dtNascimento;
 
-    @ApiModelProperty(value = "Data de Cadastro do Usuário")
+    @ApiModelProperty(value = "Data de Cadastro do Usuário", example = "25/10/2022")
     @JsonFormat(pattern = "dd/MM/yyyy hh:mm")
     private Date dtCadastro;
 
-    @ApiModelProperty(value = "Tipo do logradouro", required = false, example = "text", allowableValues = "range[1, 100]")
+    @ApiModelProperty(value = "Tipo do logradouro", example = "Rua", allowableValues = "range[1, 100]")
     private String tipoLogradouro;
 
-    @ApiModelProperty(value = "Logradouro", required = false, example = "text", allowableValues = "range[1, 200]")
+    @ApiModelProperty(value = "Logradouro", example = "Toaldo Túlio", allowableValues = "range[1, 200]")
     @Size(max = 200)
     private String Logradouro;
 
-    @ApiModelProperty(value = "Número do logradouro", required = false, example = "text", allowableValues = "range[1, 20]")
+    @ApiModelProperty(value = "Número do logradouro", example = "335", allowableValues = "range[1, 20]")
     @Size(max = 20)
     private String numero;
 
-    @ApiModelProperty(value = "Complemento do logradouro", required = false, example = "text", allowableValues = "range[1, 100]")
+    @ApiModelProperty(value = "Complemento do logradouro", example = "Lado B", allowableValues = "range[1, 100]")
     @Size(max = 100)
     private String complemento;
 
-    @ApiModelProperty(value = "Bairro", required = false, example = "text", allowableValues = "range[1, 100]")
+    @ApiModelProperty(value = "Bairro", example = "Santa Felicidade", allowableValues = "range[1, 100]")
     private String bairro;
 
-    @ApiModelProperty(value = "Cidade", required = false, example = "text", allowableValues = "range[1, 100]")
+    @ApiModelProperty(value = "Cidade", example = "Curitiba", allowableValues = "range[1, 100]")
     private String cidade;
 
-    @ApiModelProperty(value = "Número do CEP", required = false, example = "81100000")
+    @ApiModelProperty(value = "Número do CEP", example = "81100000")
     private String cep;
 
-    @ApiModelProperty(value = "Sigla da UF", required = false, example = "PR", allowableValues = "range[1, 3]")
+    @ApiModelProperty(value = "Sigla da UF", example = "PR", allowableValues = "range[1, 3]")
     private String uf;
 
-    @ApiModelProperty(value = "Telefone do Usuário", required = false, example = "(041) 99552-4488", allowableValues = "range[1, 20]")
+    @ApiModelProperty(value = "Telefone do Usuário", example = "(041) 99552-4488", allowableValues = "range[1, 20]")
     private String telefone;
 
-    @ApiModelProperty(value = "Email do Usuário", required = false, example = "exemplo@exemplo.com.br", allowableValues = "range[1, 100]")
+    @ApiModelProperty(value = "Email do Usuário", example = "exemplo@exemplo.com.br", allowableValues = "range[1, 100]")
     private String email;
 
-    @ApiModelProperty(value = "CPF do Usuário", required = false, example = "50938275097", allowableValues = "range[1, 11]")
+    @ApiModelProperty(value = "CPF do Usuário", example = "50938275097", allowableValues = "range[1, 11]")
     private String cpf;
 
-    @ApiModelProperty(value = "Situação do Usuário", required = false, example = "ATIVO", allowableValues = "range[1, 15]")
+    @ApiModelProperty(value = "Situação do Usuário", example = "ATIVO", allowableValues = "range[1, 15]")
     private String situacaoUsuario;
 
-    @ApiModelProperty(value = "Nível do Usuário", required = false, example = "ADMINISTRADOR", allowableValues = "range[1, 15]")
+    @ApiModelProperty(value = "Nível do Usuário", example = "ADMINISTRADOR", allowableValues = "range[1, 15]")
     private String nivelUsuario;
 
 }
