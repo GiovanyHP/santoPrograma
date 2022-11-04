@@ -1,7 +1,9 @@
 package br.com.santoprograma.application.config.services;
 
+import br.com.santoprograma.application.entity.CategoriaOracao;
 import br.com.santoprograma.application.entity.Oracao;
 import br.com.santoprograma.application.entity.Usuario;
+import br.com.santoprograma.application.repository.CategoriaOracaoRepository;
 import br.com.santoprograma.application.repository.OracaoRepository;
 import br.com.santoprograma.application.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,9 @@ public class DbService {
 
     @Autowired
     private OracaoRepository oracaoRepository;
+
+    @Autowired
+    private CategoriaOracaoRepository categoriaOracaoRepository;
 
     public void instanciaDB() {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
@@ -67,16 +72,44 @@ public class DbService {
         String encoder2 = passwordEncoder.encode(usuario2.getSenha());
         usuario2.setSenha(encoder2);
 
-        Oracao oracao = new Oracao(null, usuario, "pedido de oração Teste", LocalDateTime.now(), 1);
-        Oracao oracao2 = new Oracao(null, usuario, "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC", LocalDateTime.now(), 1);
-        Oracao oracao3 = new Oracao(null, usuario2, "making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of", LocalDateTime.now(), 1);
-        Oracao oracao4 = new Oracao(null, usuario2, "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32", LocalDateTime.now(), 1);
+        CategoriaOracao categoriaOracao = new CategoriaOracao();
+        categoriaOracao.setNome("Finanças");
+        categoriaOracao.setSituacaoCategoria(1);
+
+        CategoriaOracao categoriaOracao2 = new CategoriaOracao();
+        categoriaOracao2.setNome("Saúde");
+        categoriaOracao2.setSituacaoCategoria(1);
+
+        Oracao oracao = new Oracao();
+        oracao.setUsuario(usuario);
+        oracao.setPedido("pedido de oração Teste");
+        oracao.setDataPedido(LocalDateTime.now());
+        oracao.setSituacaoOracao(1);
+        oracao.setCategoriaOracao(categoriaOracao);
+
+        Oracao oracao2 = new Oracao();
+        oracao2.setUsuario(usuario);
+        oracao2.setPedido("Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC");
+        oracao2.setDataPedido(LocalDateTime.now());
+        oracao2.setSituacaoOracao(1);
+        oracao2.setCategoriaOracao(categoriaOracao2);
+
+        Oracao oracao3 = new Oracao(null, usuario2, "making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of", LocalDateTime.now(), 1, categoriaOracao2);
+        Oracao oracao4 = new Oracao(null, usuario2, "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32", LocalDateTime.now(), 1, categoriaOracao);
+
 
         usuarioRepository.save(usuario);
         usuarioRepository.save(usuario2);
+
+        categoriaOracaoRepository.save(categoriaOracao);
+        categoriaOracaoRepository.save(categoriaOracao2);
+
         oracaoRepository.save(oracao);
         oracaoRepository.save(oracao2);
+
         oracaoRepository.save(oracao3);
         oracaoRepository.save(oracao4);
+
+
     }
 }

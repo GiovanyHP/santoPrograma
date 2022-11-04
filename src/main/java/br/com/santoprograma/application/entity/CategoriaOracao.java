@@ -1,12 +1,12 @@
 package br.com.santoprograma.application.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity(name = "CategoriaOracao")
@@ -15,6 +15,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CategoriaOracao implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,4 +29,8 @@ public class CategoriaOracao implements Serializable {
     @Column(name = "situcao", nullable = false)
     private Integer situacaoCategoria;
 
+    @OneToMany(mappedBy = "categoriaOracao", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonIgnore
+    @ToString.Exclude
+    private List<Oracao> oracoes = new ArrayList<>();
 }

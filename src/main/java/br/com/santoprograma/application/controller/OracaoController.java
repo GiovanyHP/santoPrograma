@@ -64,7 +64,7 @@ public class OracaoController implements ControllerBase<OracaoDTO, OracaoDTO, Or
     @Override
     @DeleteMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public ResponseEntity<Void> delete(Long id) {
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
         oracaoService.delete(id);
         return ResponseEntity.noContent().build();
     }

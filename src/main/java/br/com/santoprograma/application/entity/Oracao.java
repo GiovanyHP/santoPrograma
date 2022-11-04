@@ -37,4 +37,8 @@ public class Oracao implements Serializable {
 
     @Column(name = "situacao")
     private Integer situacaoOracao;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "fk_categoria")
+    private CategoriaOracao categoriaOracao;
 }

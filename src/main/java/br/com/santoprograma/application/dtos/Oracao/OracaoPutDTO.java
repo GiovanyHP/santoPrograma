@@ -25,4 +25,7 @@ public class OracaoPutDTO {
 
     @ApiModelProperty(value = "Situação da Oração", example = "LIDO", allowableValues = "range[1, 15]")
     private Integer situacaoOracao;
+
+    @ApiModelProperty(value = "Categoria da oração", example = "1")
+    private Long categoria;
 }

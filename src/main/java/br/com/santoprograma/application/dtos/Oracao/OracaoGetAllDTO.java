@@ -29,6 +29,9 @@ public class OracaoGetAllDTO {
     @JsonFormat(pattern = "dd/MM/yyyy hh:mm")
     private LocalDateTime dataPedido;
 
+    @ApiModelProperty(value = "Categoria da oração")
+    private String categoria;
+
     @ApiModelProperty(value = "Situação da Oração", example = "0")
     private String situacaoOracao;
 }

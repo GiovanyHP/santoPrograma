@@ -7,6 +7,9 @@ import br.com.santoprograma.application.dtos.Oracao.OracaoPutDTO;
 import br.com.santoprograma.application.entity.Oracao;
 import br.com.santoprograma.application.enums.SituacaoOracao;
 import br.com.santoprograma.application.frameworksp.ConverterBase;
+import br.com.santoprograma.application.repository.OracaoRepository;
+import br.com.santoprograma.application.service.CategoriaOracaoService;
+import br.com.santoprograma.application.service.OracaoService;
 import br.com.santoprograma.application.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -24,6 +27,9 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
     @Autowired
     private UsuarioConverter usuarioConverter;
 
+    @Autowired
+    private CategoriaOracaoService categoriaOracaoService;
+
     @Override
     public OracaoDTO mapEntityForDTO(Oracao ent) {
         OracaoDTO oracaoDTO = new OracaoDTO();
@@ -32,6 +38,7 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
         oracaoDTO.setDataPedido(ent.getDataPedido());
         oracaoDTO.setPedido(ent.getPedido());
         oracaoDTO.setSituacaoOracao(SituacaoOracao.toEnum(ent.getSituacaoOracao()).getDescricao());
+        oracaoDTO.setCategoria(ent.getCategoriaOracao().getNome());
 
         return oracaoDTO;
     }
@@ -55,6 +62,7 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
         oracao.setDataPedido(LocalDateTime.now());
         oracao.setPedido(oracaoPostDTO.getPedido());
         oracao.setSituacaoOracao(SituacaoOracao.toEnum(oracaoPostDTO.getSituacaoOracao()).getCodigo());
+        oracao.setCategoriaOracao(categoriaOracaoService.findById(oracaoPostDTO.getCategoria()));
 
         return oracao;
     }
@@ -65,6 +73,7 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
         ent.setUsuario(oracaoPutDTO.getUsuario() != null ? usuarioService.findById(oracaoPutDTO.getUsuario()) : ent.getUsuario());
         ent.setPedido(oracaoPutDTO.getPedido() != null ? oracaoPutDTO.getPedido() : ent.getPedido());
         ent.setSituacaoOracao(oracaoPutDTO.getSituacaoOracao() != null ? SituacaoOracao.toEnum(oracaoPutDTO.getSituacaoOracao()).getCodigo() : ent.getSituacaoOracao());
+        ent.setCategoriaOracao(oracaoPutDTO.getCategoria() != null ? categoriaOracaoService.findById(oracaoPutDTO.getCategoria()) : ent.getCategoriaOracao());
 
         return ent;
     }
@@ -75,6 +84,7 @@ public class OracaoConverter implements ConverterBase<Oracao, OracaoDTO, OracaoP
         oracaoGetAllDTO.setDataPedido(oracao.getDataPedido());
         oracaoGetAllDTO.setPedido(oracao.getPedido());
         oracaoGetAllDTO.setSituacaoOracao(SituacaoOracao.toEnum(oracao.getSituacaoOracao()).getDescricao());
+        oracaoGetAllDTO.setCategoria(oracao.getCategoriaOracao().getNome());
 
         return oracaoGetAllDTO;
     }
