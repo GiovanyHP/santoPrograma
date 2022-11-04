@@ -45,7 +45,7 @@ public class UsuarioPostDTO {
     @Size(max = 20)
     private String numero;
 
-    @ApiModelProperty(value = "Complemento do logradouro", required = true, example = "text", allowableValues = "range[1, 100]")
+    @ApiModelProperty(value = "Complemento do logradouro", example = "text", allowableValues = "range[1, 100]")
     @Size(max = 100)
     private String complemento;
 
