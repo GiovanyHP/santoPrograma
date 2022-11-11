@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -69,6 +70,7 @@ public class Usuario implements Serializable {
     private String telefone;
 
     @Column(name = "email", length = 100, unique = true)
+    @Email
     private String email;
 
     @Column(name = "cpf", length = 11, nullable = false, unique = true)

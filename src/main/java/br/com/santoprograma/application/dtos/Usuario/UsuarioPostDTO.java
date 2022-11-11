@@ -9,6 +9,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.br.CPF;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
@@ -65,6 +66,7 @@ public class UsuarioPostDTO {
     private String telefone;
 
     @ApiModelProperty(value = "Email do Usuário", required = true, example = "exemplo@exemplo.com.br", allowableValues = "range[1, 100]")
+    @Email
     private String email;
 
     @ApiModelProperty(value = "CPF do Usuário", required = true, example = "50938275097", allowableValues = "range[1, 11]")
